@@ -1,0 +1,157 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f3f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Main container */
+  .main-container {
+    text-align: center;
+  }
+  
+  .main-container button {
+    padding: 12px 20px;
+    margin: 10px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-container button:hover {
+    background-color: #ff85c1;
+  }
+  
+  /* Form container */
+  .form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    width: 90%; /* Ensure equal spacing on left and right */
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #ff69b4;
+    outline: none;
+  }
+  
+  button {
+    width: 90%; /* Same width as input for consistency */
+    padding: 12px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+ /* Button container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add spacing between buttons */
+    width: 90%; /* Ensure alignment with inputs */
+    margin-top: 20px; /* Add spacing above buttons */
+  }
+  
+  button {
+    flex: 1; /* Make buttons equal width */
+    padding: 12px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: #ff85c1;
+  }
+  
+  .back-btn {
+    background-color: #bbb;
+    color: #333;
+  }
+  
+  .back-btn:hover {
+    background-color: #aaa;
+  }
+  
+  
+  /* Hidden class for navigation */
+  .hidden {
+    display: none;
+  }
+
+  #blockchainData {
+    width: 100%; /* Make it fit the container */
+    word-wrap: break-word; /* Ensure long words wrap */
+    overflow-wrap: break-word; /* Compatibility with different browsers */
+    white-space: normal; /* Prevent text from staying in one long line */
+  }
+  
+  #blockchainData div {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #blockchainData h3 {
+    margin-top: 0; /* Adjust spacing for block headers */
+  }
+
+
+  .btn-pink {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .btn-pink:hover {
+    background-color: #ff85c1;
+  }
+  
+  
+  

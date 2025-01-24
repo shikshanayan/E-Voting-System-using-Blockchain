@@ -1,0 +1,19 @@
+{
+    "type": "module",
+    "name": "blockchain",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node blockchain.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "crypto-browserify": "^3.12.1",
+        "crypto-js": "^4.2.0",
+        "crypto.js": "^3.2.2",
+        "nodemon": "^3.1.7",
+        "stream-browserify": "^3.0.0"
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration and Login System</title>
+  <link rel="stylesheet" href="reg.css">
+
+
+  <style>
+
+        /* Blockchain Viewer Container */
+#blockchainData {
+  width: 100%; /* Ensure it fits the parent container */
+  max-height: 400px; /* Set a maximum height for the viewer */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space between the data and buttons */
+}
+
+/* Style for individual blocks */
+#blockchainData div {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for block headers */
+#blockchainData h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 18px;
+  color: #333;
+  text-align: left; /* Align headers to the left */
+}
+
+/* Add spacing for the viewer buttons */
+.blockchain-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px; /* Add space above the buttons */
+}
+
+.blockchain-buttons button {
+  flex: 1; /* Equal button sizes */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#resetBlockchain {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+}
+
+#resetBlockchain:hover {
+  background-color: #ff85c1;
+}
+
+.back-btn {
+  background-color: #bbb;
+  color: #333;
+  border: none;
+}
+
+.back-btn:hover {
+  background-color: #aaa;
+}
+
+</style>
+
+      
+  
+</head>
+<body>
+  <!-- Main Page -->
+  <div id="mainPage" class="main-container">
+    <h1>Welcome</h1>
+    <button id="goToRegistration">Register</button>
+    <button id="goToLogin">Login</button>
+    <button id="goToBlockchain">View Blockchain</button>
+    <!--<button id="goToBlockchain">View Blockchain</button>-->
+
+
+  </div>
+
+  <!-- Registration Form -->
+  <div id="registration" class="form-container hidden">
+    <h2>Register</h2>
+    <form id="registrationForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="text" id="voterId" placeholder="Voter ID" required>
+      <input type="text" id="aadhaarId" placeholder="Aadhaar ID" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <input type="password" id="passkey" placeholder="Passkey" required>
+      <div class="button-container">
+        <button type="submit">Register</button>
+        <button class="back-btn" type="button">Back</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Login Form -->
+  <div id="login" class="form-container hidden">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginVoterId" placeholder="Voter ID" required>
+      <input type="password" id="loginPasskey" placeholder="Passkey" required>
+      <div class="button-container">
+        <button type="submit">Login</button>
+        <button class="back-btn" type="button">Back</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Blockchain Viewer -->
+  <div id="blockchain" class="form-container hidden">
+    <h2>Blockchain Viewer</h2>
+    <div id="blockchainData"></div>
+    <div class="button-container">
+      <button id="resetBlockchain">Start New Blockchain</button>
+      <button class="back-btn" type="button">Back</button>
+    </div>
+  </div>
+
+
+  <div id="blockchain" class="form-container hidden">
+    <h2>Blockchain Viewer</h2>
+    <div id="blockchainData"></div>
+    <div class="blockchain-buttons">
+      <button id="resetBlockchain">Start New Blockchain</button>
+      <button class="back-btn" type="button">Back</button>
+    </div>
+  </div>
+  
+  
+
+  <script src="reg.js"></script>
+  <script src="main.js"></script>
+  <script src="regblockchain.js"></script>
+  <script src ="loginblockchain.js"></script>
+
+</body>
+</html>
+
+
+
+
